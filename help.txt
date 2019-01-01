@@ -1,8 +1,8 @@
-╭───「Menu」
+╭───「 คำสั่ง 」
 ├ {key}Self
 ├ {key}Group
 ├ {key}Media
 ├ {key}Settings
 ├──────────
-│Type : HelloWorld
+│Type : sᴇʟғʙᴏᴛ-ʙʏ:ᴍᴀx
 ╰──────────
