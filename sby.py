@@ -422,7 +422,7 @@ def executeCmd(msg, text, txt, cmd, msg_id, receiver, sender, to, setKey):
         restartProgram()
     elif cmd == 'help':
         line.sendReplyMessage(msg_id, to, help())
-    elif cmd == 'speed':
+    elif cmd == 'sp':
         start = time.time()
         line.sendReplyMessage(msg_id, to, 'Checking speed')
         elapse = time.time() - start
@@ -444,9 +444,9 @@ def executeCmd(msg, text, txt, cmd, msg_id, receiver, sender, to, setKey):
         res = '╭───「 About 」'
         res += '\n├ Type : Self Bot'
         res += '\n├ Version : 3.0.8'
-        res += '\n├ Library : linepy'
+        res += '\n├ Library : BY:MAX'
         res += '\n├ Special Thanks To'
-        res += '\n├ Team Hello World'
+        res += '\n├ Team sᴇʟғʙᴏᴛ-ʙʏ:ᴍᴀx'
         res += '\n╰──────────'
         line.sendReplyMessage(msg_id, to, res)
     elif cmd == 'status':
@@ -949,7 +949,7 @@ def executeCmd(msg, text, txt, cmd, msg_id, receiver, sender, to, setKey):
             textsl = texts.lower()
             if textsl.startswith('name '):
                 name = texts[5:]
-                if len(name) <= 20:
+                if len(name) <= 2000:
                     profile.displayName = name
                     line.updateProfile(profile)
                     line.sendReplyMessage(msg_id, to, 'Success change display name, changed to `%s`' % name)
@@ -957,7 +957,7 @@ def executeCmd(msg, text, txt, cmd, msg_id, receiver, sender, to, setKey):
                     line.sendReplyMessage(msg_id, to, 'Failed change display name, the length of the name cannot be more than 20')
             elif textsl.startswith('bio '):
                 bio = texts[4:]
-                if len(bio) <= 500:
+                if len(bio) <= 500000:
                     profile.statusMessage = bio
                     line.updateProfile(profile)
                     line.sendReplyMessage(msg_id, to, 'Success change status message, changed to `%s`' % bio)
